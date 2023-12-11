@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Sheet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>  
+
+    <div id="character-sheet-content-wrapper">
+
+        <div id="header">
+
+            <div id="header-left">
+                <div id="character-name">Character Name</div>
+                <div id="race">Race</div>
+                <div id="background">Background</div>
+            </div>
+
+            <div id="header-right">
+                <div class="class-level-block" id="main-class">
+                    <div id="main-class-name">Class</div>
+                    <div class="level-padding" id="main-class-level">1</div>
+                </div>
+                <div class="class-level-block" id="multi-class">
+                    <div id="multi-class-name">Class 2</div>
+                    <div class="level-padding" id="multi-class-level">1</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="main">
+
+            <div id="main-attributes">
+                
+                <div class="main-attribute-block">
+                    <div class="main-attribute-number is-modified" id="initiative-number">0</div>
+                    <div class="main-attribute-name" id="initiative">Initiative</div>
+                </div>
+                <div class="main-attribute-block">
+                    <div class="main-attribute-number" id="ac-number">0</div>
+                    <div class="main-attribute-name" id="ac">Armor Class</div>
+                </div>
+                <div class="main-attribute-block">
+                    <div id="hp-number-block">
+                        <div class="main-attribute-number" id="hp-current-number">0</div>
+                        <div class="main-attribute-number" id="hp-slash">/</div>
+                        <div class="main-attribute-number" id="hp-max-number">0</div>
+                    </div>
+                    <div class="main-attribute-name" id="hp">Hit Points</div>
+                </div>
+
+            </div>
+
+            <div id="secondary-attributes">
+
+                <div id="secondary-attributes-left">
+                    <div class="secondary-attribute banner-attribute">
+                        <div class="secondary-number" id="proficiency">0</div>
+                        <div class="secondary-banner">Proficiency</div>
+                    </div>
+                    <div class="secondary-attribute banner-attribute">
+                        <div class="secondary-number" id="speed">0</div>
+                        <div class="secondary-banner">Speed</div>
+                    </div>
+                    <div class="secondary-attribute banner-attribute">
+                        <div class="secondary-number" id="passive-perception">0</div>
+                        <div class="secondary-banner">P. Perception</div>
+                    </div>
+                </div>
+
+                <div id="secondary-attributes-right">
+                    <div class="secondary-attribute" id="hit-dice">
+                        <div id="hit-dice-wrapper">
+                            <div id="hit-dice-number-wrapper">
+                                <div id="hit-dice-current-total">
+                                    <div class="hit-dice-number" id="hit-dice-current">1</div>
+                                    <div class="hit-dice-number">/</div>
+                                    <div class="hit-dice-number" id="hit-dice-max">1</div>
+                                </div>
+                                <div id="hit-dice-die">
+                                    <div class="hit-dice-number">d</div>
+                                    <div class="hit-dice-number" id="hit-dice-dice-number">-</div>
+                                </div>
+                            </div>
+                            <div id="hit-dice-label">Hit-dice</div>
+                        </div>
+                    </div>
+                    <div class="secondary-attribute banner-attribute">
+                        <div id="inspiration-wrapper">
+                            <div id="inspiration-box">
+                                <div id="inspiration-marker"></div>
+                            </div>
+                            <div id="inspiration-label">Inspiration</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="stats">
+
+                <div id="stats-left">
+                    <div class="stat-block">
+                        <div class="stat-block-header">
+                            <div class="stat-name">Strength</div>
+                            <div class="stat-number" id="strength">10</div>
+                        </div>
+                        <div class="stat-block-values">
+                            <div class="stat-value stat-mod" id="strength-mod">0</div>
+                            <div class="stat-value stat-save" id="strength-save">0</div>
+                        </div>
+                    </div>
+                    <div class="stat-block">
+                        <div class="stat-block-header">
+                            <div class="stat-name">Dexterity</div>
+                            <div class="stat-number" id="dexterity">10</div>
+                        </div>
+                        <div class="stat-block-values">
+                            <div class="stat-value stat-mod" id="dexterity-mod">0</div>
+                            <div class="stat-value stat-save" id="dexterity-save">0</div>
+                        </div>
+                    </div>
+                    <div class="stat-block">
+                        <div class="stat-block-header">
+                            <div class="stat-name">Constitution</div>
+                            <div class="stat-number" id="constitution">10</div>
+                        </div>
+                        <div class="stat-block-values">
+                            <div class="stat-value stat-mod" id="constitution-mod">0</div>
+                            <div class="stat-value stat-save" id="constitution-save">0</div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="stats-right">
+                    <div class="stat-block">
+                        <div class="stat-block-header">
+                            <div class="stat-name">Intelligence</div>
+                            <div class="stat-number" id="intelligence">10</div>
+                        </div>
+                        <div class="stat-block-values">
+                            <div class="stat-value stat-mod" id="intelligence-mod">0</div>
+                            <div class="stat-value stat-save" id="intelligence-save">0</div>
+                        </div>
+                    </div>
+                    <div class="stat-block">
+                        <div class="stat-block-header">
+                            <div class="stat-name">Wisdom</div>
+                            <div class="stat-number" id="wisdom">10</div>
+                        </div>
+                        <div class="stat-block-values">
+                            <div class="stat-value stat-mod" id="wisdom-mod">0</div>
+                            <div class="stat-value stat-save" id="wisdom-save">0</div>
+                        </div>
+                    </div>
+                    <div class="stat-block">
+                        <div class="stat-block-header">
+                            <div class="stat-name">Charisma</div>
+                            <div class="stat-number" id="charisma">10</div>
+                        </div>
+                        <div class="stat-block-values">
+                            <div class="stat-value stat-mod" id="charisma-mod">0</div>
+                            <div class="stat-value stat-save" id="charisma-save">0</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="attacks">
+
+                <div class="attack-block">
+                    <div class="attack-item weapon" id="weapon-1"></div>
+                    <div class="attack-item attack" id="attack-1"></div>
+                    <div class="attack-item damage" id="damage-1"></div>
+                </div>
+
+                <div class="attack-block">
+                    <div class="attack-item weapon" id="weapon-2"></div>
+                    <div class="attack-item attack" id="attack-2"></div>
+                    <div class="attack-item damage" id="damage-2"></div>
+                </div>
+
+                <div class="attack-block">
+                    <div class="attack-item weapon" id="weapon-3"></div>
+                    <div class="attack-item attack" id="attack-3"></div>
+                    <div class="attack-item damage" id="damage-3"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="tabs">
+            <div class="tab">spells</div>
+            <div class="tab"></div>
+            <div class="tab"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
