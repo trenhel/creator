@@ -13,31 +13,36 @@
 
     <div id="character-sheet-content-wrapper">
 
-        <div id="header">
-
-            <div id="header-left">
-                <div id="character-name">Character Name</div>
-                <div id="race">Race</div>
-                <div id="background">Background</div>
-            </div>
-
-            <div id="header-right">
-                <div class="class-level-block" id="main-class">
-                    <div id="main-class-name">Class</div>
-                    <div class="level-padding" id="main-class-level">1</div>
+        <div id="header-wrapper">
+            <div id="header">
+                <div id="header-left">
+                    <div id="character-name">Character Name</div>
+                    <div id="race">Race</div>
+                    <div id="background">Background</div>
                 </div>
-                <div class="class-level-block" id="multi-class">
-                    <div id="multi-class-name">Class 2</div>
-                    <div class="level-padding" id="multi-class-level">1</div>
+                <div id="header-right">
+                    <div class="class-level-block" id="main-class">
+                        <div id="main-class-name">Class</div>
+                        <div class="level-padding" id="main-class-level">1</div>
+                    </div>
+                    <div class="class-level-block" id="multi-class">
+                        <div id="multi-class-name">Class 2</div>
+                        <div class="level-padding" id="multi-class-level">1</div>
+                    </div>
                 </div>
             </div>
-
+            <div id="currency">
+                <div id="cp">0</div>
+                <div id="sp">0</div>
+                <div id="ep">0</div>
+                <div id="gp">0</div>
+                <div id="pp">0</div>
+            </div>
         </div>
 
-        <div id="main">
-
+        <div id="main-content-wrapper">
             <div id="main-attributes">
-                
+            
                 <div class="main-attribute-block">
                     <div class="main-attribute-number is-modified" id="initiative-number">0</div>
                     <div class="main-attribute-name" id="initiative">Initiative</div>
@@ -54,11 +59,8 @@
                     </div>
                     <div class="main-attribute-name" id="hp">Hit Points</div>
                 </div>
-
             </div>
-
             <div id="secondary-attributes">
-
                 <div id="secondary-attributes-left">
                     <div class="secondary-attribute banner-attribute">
                         <div class="secondary-number" id="proficiency">0</div>
@@ -73,7 +75,6 @@
                         <div class="secondary-banner">P. Perception</div>
                     </div>
                 </div>
-
                 <div id="secondary-attributes-right">
                     <div class="secondary-attribute" id="hit-dice">
                         <div id="hit-dice-wrapper">
@@ -100,11 +101,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
             <div id="stats">
-
                 <div id="stats-left">
                     <div class="stat-block">
                         <div class="stat-block-header">
@@ -137,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-            
+        
                 <div id="stats-right">
                     <div class="stat-block">
                         <div class="stat-block-header">
@@ -170,37 +168,30 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
             <div id="attacks">
-
                 <div class="attack-block">
                     <div class="attack-item weapon" id="weapon-1"></div>
                     <div class="attack-item attack" id="attack-1"></div>
                     <div class="attack-item damage" id="damage-1"></div>
                 </div>
-
                 <div class="attack-block">
                     <div class="attack-item weapon" id="weapon-2"></div>
                     <div class="attack-item attack" id="attack-2"></div>
                     <div class="attack-item damage" id="damage-2"></div>
                 </div>
-
                 <div class="attack-block">
                     <div class="attack-item weapon" id="weapon-3"></div>
                     <div class="attack-item attack" id="attack-3"></div>
                     <div class="attack-item damage" id="damage-3"></div>
                 </div>
-
             </div>
-
         </div>
 
         <div id="tabs">
+            <div class="tab">skills</div>
+            <div class="tab">equipment</div>
             <div class="tab">spells</div>
-            <div class="tab"></div>
-            <div class="tab"></div>
         </div>
 
     </div>
